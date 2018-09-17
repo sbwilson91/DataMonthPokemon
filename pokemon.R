@@ -117,7 +117,13 @@ ggplot(pokemon,
        aes(type1, attack,
        fill = type1)) +
   geom_boxplot() +
+  geom_point(aes(colour = sp_attack), position = "jitter", size = 2)+
 
   labs(title = 'Generation: {frame_time}') +
   transition_time(generation) +
   ease_aes('linear')
+
+rgl::plot3d(x = c(poke.stats$attack, poke.stats$defense, poke.stats$speed))
+with(iris, plot3d(Sepal.Length, Sepal.Width, Petal.Length, 
+                  type="s", col=as.numeric(Species)))
+
