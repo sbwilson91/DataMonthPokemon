@@ -52,7 +52,7 @@ ui <- fluidPage(
 )
 
 # Define server logic required to draw a histogram
-server <- function(input, output) {
+server <- function(input, output){
   
 
   output$attack <- renderUI({
@@ -114,8 +114,19 @@ server <- function(input, output) {
    })
    output$DVstats <- renderTable({
      poke <- gen1stats %>% filter(Name == input$pkmn)
-     stat <- data.frame(row.names = input$pkmn) %>% rownames_to_column("DV")
-     stat$HP <- as.integer(100*(input$hp-(input$level+10))/(2*input$level)-poke$HP)
+     #min.max <- data.frame(row.names = c("MIN", "MAX"))# %>% rownames_to_column("DV")
+     #HP <- c()
+     #for(i in 0:15){
+     #  as.integer(poke$HP * input$level / 50 + 5 + i * input$level / 50) -> a
+     #  if (a == input$hp){
+     #    HP <- c(HP, a)
+     #  }
+     #  
+     #}
+     #data.frame(HP = HP)
+
+     stat <- data.frame(name = input$pkmn)
+     stat$HP <-  as.integer(100*(input$hp-(input$level+10))/(2*input$level)-poke$HP)
      stat$ATT <- as.integer(100*(input$att-5)/(2*input$level)-poke$ATT)
      stat$DEF <- as.integer(100*(input$def-5)/(2*input$level)-poke$DEF)
      stat$SPD <- as.integer(100*(input$spd-5)/(2*input$level)-poke$SPD)
@@ -144,8 +155,7 @@ server <- function(input, output) {
      
      
    })
+#})
 }
-
 # Run the application 
 shinyApp(ui = ui, server = server)
-
