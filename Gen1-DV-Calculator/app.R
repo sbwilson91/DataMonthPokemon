@@ -31,7 +31,7 @@ ui <- fluidPage(
                      "Pokemon Level:",
                      min = 1,
                      max = 100,
-                     value = 100),
+                     value = 25),
         uiOutput("health"),
         uiOutput("attack"),
         uiOutput("defense"),
@@ -41,13 +41,23 @@ ui <- fluidPage(
 
         
       ),
+      mainPanel(
+      tabsetPanel(type = "pills",
+        tabPanel("Gen 1",
+                 fluidRow(
+                 tableOutput("BASEstats"),
+                 tableOutput("DVstats"),
+                 plotOutput("bar"))),
+        tabPanel("Gen 2")
+        
+      ))
       
       # Show a plot of the generated distribution
-      mainPanel(
-         tableOutput("BASEstats"),
-         tableOutput("DVstats"),
-         plotOutput("bar")
-      )
+      #mainPanel(
+      #   tableOutput("BASEstats"),
+      #   tableOutput("DVstats"),
+      #   plotOutput("bar")
+      #)
    )
 )
 
@@ -93,6 +103,7 @@ server <- function(input, output){
                 min = as.integer(poke$SPC * input$level / 50 + 5 + 0 * input$level / 50),
                 max = as.integer(poke$SPC * input$level / 50 + 5 + 15 * input$level / 50),
                 value = as.integer(poke$SPC * input$level / 50 + 5 + 0 * input$level / 50))
+                
     
   })
   output$health <- renderUI({
@@ -114,40 +125,102 @@ server <- function(input, output){
    })
    output$DVstats <- renderTable({
      poke <- gen1stats %>% filter(Name == input$pkmn)
-     #min.max <- data.frame(row.names = c("MIN", "MAX"))# %>% rownames_to_column("DV")
-     #HP <- c()
-     #for(i in 0:15){
-     #  as.integer(poke$HP * input$level / 50 + 5 + i * input$level / 50) -> a
-     #  if (a == input$hp){
-     #    HP <- c(HP, a)
-     #  }
-     #  
-     #}
-     #data.frame(HP = HP)
+     a <- c("HP", "ATT", "DEF", "SPD", "SPC")
+     min.max <- data.frame(row.names = c("MIN", "MAX"))
+     inputs <- data.frame(pkmn = input$pkmn, 
+                          hp = input$hp,
+                          att = input$att,
+                          def = input$def,
+                          spd = input$spd,
+                          spc = input$spc,
+                          level = input$level)
+     inputs$pkmn <- as.character(inputs$pkmn)
+     poke$Name <- as.character(poke$Name)
+     stats <- full_join(x = inputs, y = poke, by = c("pkmn" = "Name"))
+     for(j in 1:length(a)){
+       if (a[j] == "HP") {
+         #hp calculation
+         stat.range <- c()
+         fla <- function(stats, i = i) {
+           as.integer(stats$HP * stats$level / 50 + (stats$level+10) + i * stats$level / 50)
+           
+         }
+         
+       } else {
+         stat.range <- c()
+         fla <- function(stats, i = i) {
+           as.integer(stats[,(7+j)] * stats$level / 50 + 5 + i * stats$level / 50)
+           
+         }
+         #other stat calculation
+       }
+       
+       for(i in 0:15){
+         temp <- fla(stats, i)
+         if (temp == inputs[j+1]){
+           stat.range <- c(stat.range, i)
+         }
+         
+       }
+       min.max <- cbind(min.max, c(min(stat.range), max(stat.range)))
 
-     stat <- data.frame(name = input$pkmn)
-     stat$HP <-  as.integer(100*(input$hp-(input$level+10))/(2*input$level)-poke$HP)
-     stat$ATT <- as.integer(100*(input$att-5)/(2*input$level)-poke$ATT)
-     stat$DEF <- as.integer(100*(input$def-5)/(2*input$level)-poke$DEF)
-     stat$SPD <- as.integer(100*(input$spd-5)/(2*input$level)-poke$SPD)
-     stat$SPC <- as.integer(100*(input$spc-5)/(2*input$level)-poke$SPC)
-     stat$Pct <- sum(stat[2:6])/75*100
-     stat
+     }
+     colnames(min.max) <- a
+     min.max %>% mutate(PCT = (min.max$ATT+min.max$DEF+min.max$SPD+min.max$SPC+min.max$HP)/75*100)
+     #min.max %>% mutate(PCT = sum(min.max[,1:5])/75*100)
+     
+     
    })
    output$bar <- renderPlot({
      poke <- gen1stats %>% filter(Name == input$pkmn)
      a <- c("HP", "ATT", "DEF", "SPD", "SPC")
-     b <- c(as.integer(100*(input$hp-(input$level+10))/(2*input$level)-poke$HP),
-            as.integer(100*(input$att-5)/(2*input$level)-poke$ATT),
-            as.integer(100*(input$def-5)/(2*input$level)-poke$DEF),
-            as.integer(100*(input$spd-5)/(2*input$level)-poke$SPD),
-            as.integer(100*(input$spc-5)/(2*input$level)-poke$SPC)
-            )
-     c <- data.frame(STAT = a, VALUE = b)
+     min.max <- data.frame(row.names = c("MIN", "MAX"))
+     inputs <- data.frame(pkmn = input$pkmn, 
+                          hp = input$hp,
+                          att = input$att,
+                          def = input$def,
+                          spd = input$spd,
+                          spc = input$spc,
+                          level = input$level)
+     stats <- full_join(x = inputs, y = poke, by = c("pkmn" = "Name"))
+     for(j in 1:length(a)){
+       if (a[j] == "HP") {
+         #hp calculation
+         stat.range <- c()
+         fla <- function(stats, i = i) {
+           as.integer(stats$HP * stats$level / 50 + (stats$level+10) + i * stats$level / 50)
+           
+         }
+         
+       } else {
+         stat.range <- c()
+         fla <- function(stats, i = i) {
+           as.integer(stats[,(7+j)] * stats$level / 50 + 5 + i * stats$level / 50)
+           
+         }
+         #other stat calculation
+       }
+       
+       for(i in 0:15){
+         temp <- fla(stats, i)
+         if (temp == inputs[j+1]){
+           stat.range <- c(stat.range, i)
+         }
+         
+       }
+       min.max <- cbind(min.max, c(min(stat.range), max(stat.range)))
+       
+     }
+     colnames(min.max) <- a
+     
+     c <- t(min.max)
+     c <- data.frame(STAT = c(a,a), VALUE = c(c[,1], c[,2]))
 
-     ggplot(c, aes(x = STAT, y = VALUE)) + geom_col() + 
+     ggplot(c, aes(x = STAT, y = VALUE)) + 
+       geom_line(size = 2) +
+       geom_point(size = 5)+
        coord_cartesian(ylim = c(0,15)) +
-       labs(title = paste0("Percentage: ", sum(b[1:5])/75*100))
+       labs(title = paste0("Percentage is "))
      
      
      #data.frame(Type = c("HP", "ATT", "DEF", "SPD", "SPC", "PCT"),
@@ -155,7 +228,7 @@ server <- function(input, output){
      
      
    })
-#})
+
 }
 # Run the application 
 shinyApp(ui = ui, server = server)
