@@ -1,0 +1,1037 @@
+Pokemon,Stats,,,CP,Rating
+Bulbasaur#1 Bulbasaur,128,118,111,1115,0 
+,HP,Atk,Def,,
+Ivysaur#2 Ivysaur,155,151,143,1699,0 
+,HP,Atk,Def,,
+Venusaur#3 Venusaur,190,198,189,2720,3.5 
+,HP,Atk,Def,,
+Charmander#4 Charmander,118,116,93,980,0 
+,HP,Atk,Def,,
+Charmeleon#5 Charmeleon,151,158,126,1653,0 
+,HP,Atk,Def,,
+Charizard#6 Charizard,186,223,173,2889,3.5 
+,HP,Atk,Def,,
+Squirtle#7 Squirtle,127,94,121,946,0 
+,HP,Atk,Def,,
+Wartortle#8 Wartortle,153,126,155,1488,0 
+,HP,Atk,Def,,
+Blastoise#9 Blastoise,188,171,207,2466,1 
+,HP,Atk,Def,,
+Caterpie#10 Caterpie,128,55,55,437,0 
+,HP,Atk,Def,,
+Metapod#11 Metapod,137,45,80,450,0 
+,HP,Atk,Def,,
+Butterfree#12 Butterfree,155,167,137,1827,1 
+,HP,Atk,Def,,
+Weedle#13 Weedle,120,63,50,456,0 
+,HP,Atk,Def,,
+Kakuna#14 Kakuna,128,46,75,432,0 
+,HP,Atk,Def,,
+Beedrill#15 Beedrill,163,169,130,1846,1 
+,HP,Atk,Def,,
+Pidgey#16 Pidgey,120,85,73,680,0 
+,HP,Atk,Def,,
+Pidgeotto#17 Pidgeotto,160,117,105,1194,0 
+,HP,Atk,Def,,
+Pidgeot#18 Pidgeot,195,166,154,2129,1 
+,HP,Atk,Def,,
+Rattata#19 Rattata,102,103,70,734,0 
+,HP,Atk,Def,,
+alolanRattata#19 Alolan Rattata,102,103,70,734,- 
+,HP,Atk,Def,,
+Raticate#20 Raticate,146,161,139,1730,1 
+,HP,Atk,Def,,
+AlolanRaticate#20 Alolan Raticate,181,135,154,1705,0 
+,HP,Atk,Def,,
+pearow#21 Spearow,120,112,60,798,0 
+,HP,Atk,Def,,
+Fearow#22 Fearow,163,182,133,1997,1 
+,HP,Atk,Def,,
+Ekans#23 Ekans,111,110,97,927,0 
+,HP,Atk,Def,,
+Arbok#24 Arbok,155,167,153,1921,1 
+,HP,Atk,Def,,
+Pikachu#25 Pikachu,111,112,96,938,0 
+,HP,Atk,Def,,
+Raichu#26 Raichu,155,193,151,2182,2 
+,HP,Atk,Def,,
+aloRai#26 Alolan Raichu,155,201,154,2286,2 
+,HP,Atk,Def,,
+Sandshrew#27 Sandshrew,137,126,120,1261,0 
+,HP,Atk,Def,,
+aloSand#27 Alolan Sandshrew,137,125,129,1293,0 
+,HP,Atk,Def,,
+Sandslash#28 Sandslash,181,182,175,2374,1 
+,HP,Atk,Def,,
+alosandsl#28 Alolan Sandslash,181,177,195,2432,2 
+,HP,Atk,Def,,
+Nidoran Female#29 Nidoran?,146,86,89,816,0 
+,HP,Atk,Def,,
+Nidorina#30 Nidorina,172,117,120,1309,0 
+,HP,Atk,Def,,
+Nidoqueen#31 Nidoqueen,207,180,173,2488,2 
+,HP,Atk,Def,,
+Nidoran Male#32 Nidoran?,130,105,76,860,0 
+,HP,Atk,Def,,
+Nidorino#33 Nidorino,156,137,111,1393,0 
+,HP,Atk,Def,,
+Nidoking#34 Nidoking,191,204,156,2567,2 
+,HP,Atk,Def,,
+Clefairy#35 Clefairy,172,107,108,1155,0 
+,HP,Atk,Def,,
+Clefable#36 Clefable,216,178,162,2437,0 
+,HP,Atk,Def,,
+Vulpix#37 Vulpix,116,96,109,883,0 
+,HP,Atk,Def,,
+alovul#37 Alolan Vulpix,116,96,109,883,0 
+,HP,Atk,Def,,
+Ninetales#38 Ninetales,177,169,190,2279,2 
+,HP,Atk,Def,,
+aNi#38 Alolan Ninetales,177,170,193,2309,2 
+,HP,Atk,Def,,
+Jigglypuff#39 Jigglypuff,251,80,41,724,0 
+,HP,Atk,Def,,
+Wigglytuff#40 Wigglytuff,295,156,90,1926,1 
+,HP,Atk,Def,,
+Zubat#41 Zubat,120,83,73,667,0 
+,HP,Atk,Def,,
+Golbat#42 Golbat,181,161,150,1976,0 
+,HP,Atk,Def,,
+Oddish#43 Oddish,128,131,112,1228,0 
+,HP,Atk,Def,,
+Gloom#44 Gloom,155,153,136,1681,0 
+,HP,Atk,Def,,
+Vileplume#45 Vileplume,181,202,167,2559,2.5 
+,HP,Atk,Def,,
+Paras#46 Paras,111,121,99,1018,0 
+,HP,Atk,Def,,
+Parasect#47 Parasect,155,165,146,1859,1 
+,HP,Atk,Def,,
+Venonat#48 Venonat,155,100,100,1004,0 
+,HP,Atk,Def,,
+Venomoth#49 Venomoth,172,179,143,2082,1 
+,HP,Atk,Def,,
+Diglett#50 Diglett,67,109,78,676,0 
+,HP,Atk,Def,,
+aloDig#50 Alolan Diglett,67,108,81,681,0 
+,HP,Atk,Def,,
+Dugtrio#51 Dugtrio,111,167,136,1567,0 
+,HP,Atk,Def,,
+aloDug#51 Alolan Dugtrio,111,201,142,1897,1 
+,HP,Atk,Def,,
+Meowth#52 Meowth,120,92,78,748,0 
+,HP,Atk,Def,,
+alome#52 Alolan Meowth,120,99,78,797,0 
+,HP,Atk,Def,,
+Persian#53 Persian,163,150,136,1689,0 
+,HP,Atk,Def,,
+aloPersian#53 Alolan Persian,163,158,136,1771,0 
+,HP,Atk,Def,,
+Psyduck#54 Psyduck,137,122,95,1106,0 
+,HP,Atk,Def,,
+Golduck#55 Golduck,190,191,162,2450,2 
+,HP,Atk,Def,,
+Mankey#56 Mankey,120,148,82,1164,0 
+,HP,Atk,Def,,
+Primeape#57 Primeape,163,207,138,2288,2 
+,HP,Atk,Def,,
+Growlithe#58 Growlithe,146,136,93,1243,0 
+,HP,Atk,Def,,
+Arcanine#59 Arcanine,207,227,166,3029,3 
+,HP,Atk,Def,,
+Poliwag#60 Poliwag,120,101,82,829,0 
+,HP,Atk,Def,,
+Poliwhirl#61 Poliwhirl,163,130,123,1419,0 
+,HP,Atk,Def,,
+Poliwrath#62 Poliwrath,207,182,184,2586,3 
+,HP,Atk,Def,,
+Abra#63 Abra,93,195,82,1342,0 
+,HP,Atk,Def,,
+Kadabra#64 Kadabra,120,232,117,2059,0 
+,HP,Atk,Def,,
+Alakazam#65 Alakazam,146,271,167,3057,4 
+,HP,Atk,Def,,
+Machop#66 Machop,172,137,82,1278,0 
+,HP,Atk,Def,,
+Machoke#67 Machoke,190,177,125,2031,0 
+,HP,Atk,Def,,
+Machamp#68 Machamp,207,234,159,3056,5 
+,HP,Atk,Def,,
+Bellsprout#69 Bellsprout,137,139,61,1033,0 
+,HP,Atk,Def,,
+Weepinbell#70 Weepinbell,163,172,92,1611,0 
+,HP,Atk,Def,,
+Victreebel#71 Victreebel,190,207,135,2431,3 
+,HP,Atk,Def,,
+Tentacool#72 Tentacool,120,97,149,1040,0 
+,HP,Atk,Def,,
+Tentacruel#73 Tentacruel,190,166,209,2422,2 
+,HP,Atk,Def,,
+Geodude#74 Geodude,120,132,132,1293,0 
+,HP,Atk,Def,,
+geodudeAlo#74 Alolan Geodude,120,132,132,1293,0 
+,HP,Atk,Def,,
+Graveler#75 Graveler,146,164,164,1897,0 
+,HP,Atk,Def,,
+aloGrav#75 Alolan Graveler,146,164,164,1897,- 
+,HP,Atk,Def,,
+Golem#76 Golem,190,211,198,2949,4 
+,HP,Atk,Def,,
+aGo#76 Alolan Golem,190,211,198,2949,4 
+,HP,Atk,Def,,
+Ponyta#77 Ponyta,137,170,127,1697,0 
+,HP,Atk,Def,,
+Rapidash#78 Rapidash,163,207,162,2461,2 
+,HP,Atk,Def,,
+Slowpoke#79 Slowpoke,207,109,98,1226,0 
+,HP,Atk,Def,,
+Slowbro#80 Slowbro,216,177,180,2545,0 
+,HP,Atk,Def,,
+Magnemite#81 Magnemite,93,165,121,1362,0 
+,HP,Atk,Def,,
+Magneton#82 Magneton,137,223,169,2485,2 
+,HP,Atk,Def,,
+Farfetch'd#83 Farfetch'd,141,124,115,1236,0 
+,HP,Atk,Def,,
+Doduo#84 Doduo,111,158,83,1200,0 
+,HP,Atk,Def,,
+Dodrio#85 Dodrio,155,218,140,2362,1 
+,HP,Atk,Def,,
+Seel#86 Seel,163,85,121,971,0 
+,HP,Atk,Def,,
+Dewgong#87 Dewgong,207,139,177,1985,1 
+,HP,Atk,Def,,
+Grimer#88 Grimer,190,135,90,1374,0 
+,HP,Atk,Def,,
+alogri#88 Alolan Grimer,190,135,90,1374,0 
+,HP,Atk,Def,,
+Muk#89 Muk,233,190,172,2757,2 
+,HP,Atk,Def,,
+alMu#89 Alolan Muk,233,190,172,2757,2.5 
+,HP,Atk,Def,,
+Shellder#90 Shellder,102,116,134,1080,0 
+,HP,Atk,Def,,
+Cloyster#91 Cloyster,137,186,256,2547,2.5 
+,HP,Atk,Def,,
+Gastly#92 Gastly,102,186,67,1229,0 
+,HP,Atk,Def,,
+Haunter#93 Haunter,128,223,107,1963,2 
+,HP,Atk,Def,,
+Gengar#94 Gengar,155,261,149,2878,4 
+,HP,Atk,Def,,
+Onix#95 Onix,111,85,232,1101,0 
+,HP,Atk,Def,,
+Drowzee#96 Drowzee,155,89,136,1040,0 
+,HP,Atk,Def,,
+Hypno#97 Hypno,198,144,193,2090,1 
+,HP,Atk,Def,,
+Krabby#98 Krabby,102,181,124,1561,0 
+,HP,Atk,Def,,
+Kingler#99 Kingler,146,240,181,2829,2 
+,HP,Atk,Def,,
+Voltorb#100 Voltorb,120,109,111,1010,0 
+,HP,Atk,Def,,
+Electrode#101 Electrode,155,173,173,2099,1 
+,HP,Atk,Def,,
+Exeggcute#102 Exeggcute,155,107,125,1175,0 
+,HP,Atk,Def,,
+Exeggutor#103 Exeggutor,216,233,149,3014,4.5 
+,HP,Atk,Def,,
+aloEg#103 Alolan Exeggutor,216,230,153,3014,4.5 
+,HP,Atk,Def,,
+Cubone#104 Cubone,137,90,144,1019,0 
+,HP,Atk,Def,,
+Marowak#105 Marowak,155,144,186,1835,0 
+,HP,Atk,Def,,
+alMaro#105 Alolan Marowak,155,144,186,1835,1 
+,HP,Atk,Def,,
+Hitmonlee#106 Hitmonlee,137,224,181,2576,2 
+,HP,Atk,Def,,
+Hitmonchan#107 Hitmonchan,137,193,197,2332,1 
+,HP,Atk,Def,,
+Lickitung#108 Lickitung,207,108,137,1411,0 
+,HP,Atk,Def,,
+Koffing#109 Koffing,120,119,141,1214,0 
+,HP,Atk,Def,,
+Weezing#110 Weezing,163,174,197,2293,1 
+,HP,Atk,Def,,
+Rhyhorn#111 Rhyhorn,190,140,127,1651,0 
+,HP,Atk,Def,,
+Rhydon#112 Rhydon,233,222,171,3179,3 
+,HP,Atk,Def,,
+Chansey#113 Chansey,487,60,128,1255,0 
+,HP,Atk,Def,,
+Tangela#114 Tangela,163,183,169,2238,2.5 
+,HP,Atk,Def,,
+Kangaskhan#115 Kangaskhan,233,181,165,2586,1 
+,HP,Atk,Def,,
+Horsea#116 Horsea,102,129,103,1056,0 
+,HP,Atk,Def,,
+Seadra#117 Seadra,146,187,156,2093,1 
+,HP,Atk,Def,,
+Goldeen#118 Goldeen,128,123,110,1152,0 
+,HP,Atk,Def,,
+Seaking#119 Seaking,190,175,147,2162,1 
+,HP,Atk,Def,,
+Staryu#120 Staryu,102,137,112,1157,0 
+,HP,Atk,Def,,
+Starmie#121 Starmie,155,210,184,2584,2 
+,HP,Atk,Def,,
+Mr. Mime#122 Mr. Mime,120,192,205,2228,1 
+,HP,Atk,Def,,
+Scyther#123 Scyther,172,218,170,2706,2.5 
+,HP,Atk,Def,,
+Jynx#124 Jynx,163,223,151,2555,3.5 
+,HP,Atk,Def,,
+Electabuzz#125 Electabuzz,163,198,158,2334,2 
+,HP,Atk,Def,,
+Magmar#126 Magmar,163,206,154,2394,1 
+,HP,Atk,Def,,
+Pinsir#127 Pinsir,163,238,182,2959,3.5 
+,HP,Atk,Def,,
+Tauros#128 Tauros,181,198,183,2620,1 
+,HP,Atk,Def,,
+Magikarp#129 Magikarp,85,29,85,274,0 
+,HP,Atk,Def,,
+Gyarados#130 Gyarados,216,237,186,3391,4.5 
+,HP,Atk,Def,,
+Lapras#131 Lapras,277,165,174,2641,2.5 
+,HP,Atk,Def,,
+Ditto#132 Ditto,134,91,91,832,0 
+,HP,Atk,Def,,
+Eevee#133 Eevee,146,104,114,1071,0 
+,HP,Atk,Def,,
+Vaporeon#134 Vaporeon,277,205,161,3114,4 
+,HP,Atk,Def,,
+Jolteon#135 Jolteon,163,232,182,2888,3.5 
+,HP,Atk,Def,,
+Flareon#136 Flareon,163,246,179,3029,4 
+,HP,Atk,Def,,
+Porygon#137 Porygon,163,153,136,1720,0 
+,HP,Atk,Def,,
+Omanyte#138 Omanyte,111,155,153,1544,0 
+,HP,Atk,Def,,
+Omastar#139 Omastar,172,207,201,2786,2.5 
+,HP,Atk,Def,,
+Kabuto#140 Kabuto,102,148,140,1370,0 
+,HP,Atk,Def,,
+Kabutops#141 Kabutops,155,220,186,2713,2 
+,HP,Atk,Def,,
+Aerodactyl#142 Aerodactyl,190,221,159,2783,2 
+,HP,Atk,Def,,
+Snorlax#143 Snorlax,330,190,169,3225,2.5 
+,HP,Atk,Def,,
+Articuno#144 Articuno,207,192,236,3051,4 
+,HP,Atk,Def,,
+Zapdos#145 Zapdos,207,253,185,3527,4.5 
+,HP,Atk,Def,,
+Moltres#146 Moltres,207,251,181,3465,4.5 
+,HP,Atk,Def,,
+Dratini#147 Dratini,121,119,91,1004,0 
+,HP,Atk,Def,,
+Dragonair#148 Dragonair,156,163,135,1780,0 
+,HP,Atk,Def,,
+Dragonite#149 Dragonite,209,263,198,3792,4.5 
+,HP,Atk,Def,,
+Mewtwo#150 Mewtwo,214,300,182,4178,5 
+,HP,Atk,Def,,
+Mew#151 Mew,225,210,210,3265,2.5 
+,HP,Atk,Def,,
+Chikorita#152 Chikorita,128,92,122,935,0 
+,HP,Atk,Def,,
+Bayleef#153 Bayleef,155,122,155,1454,0 
+,HP,Atk,Def,,
+Meganium#154 Meganium,190,168,202,2410,2 
+,HP,Atk,Def,,
+Cyndaquil#155 Cyndaquil,118,116,93,980,0 
+,HP,Atk,Def,,
+Quilava#156 Quilava,151,158,126,1653,0 
+,HP,Atk,Def,,
+?????#157 Typhlosion,186,223,173,2889,2.5 
+,HP,Atk,Def,,
+Totodile#158 Totodile,137,117,109,1131,0 
+,HP,Atk,Def,,
+Crocrodil#159 Croconaw,163,150,142,1722,0 
+,HP,Atk,Def,,
+Feraligatr#160 Feraligatr,198,205,188,2857,3 
+,HP,Atk,Def,,
+Sentret#161 Sentret,111,79,73,618,0 
+,HP,Atk,Def,,
+Furret#162 Furret,198,148,125,1758,1 
+,HP,Atk,Def,,
+Hoothoot#163 Hoothoot,155,67,88,677,0 
+,HP,Atk,Def,,
+Noctowl#164 Noctowl,225,145,156,2024,1 
+,HP,Atk,Def,,
+Ledyba#165 Ledyba,120,72,118,728,0 
+,HP,Atk,Def,,
+Ledian#166 Ledian,146,107,179,1346,0 
+,HP,Atk,Def,,
+Spinarak#167 Spinarak,120,105,73,816,0 
+,HP,Atk,Def,,
+Ariados#168 Ariados,172,161,124,1772,0 
+,HP,Atk,Def,,
+Crobat#169 Crobat,198,194,178,2646,2 
+,HP,Atk,Def,,
+Chinchou#170 Chinchou,181,106,97,1119,0 
+,HP,Atk,Def,,
+Lanturn#171 Lanturn,268,146,137,2085,1 
+,HP,Atk,Def,,
+Pichu#172 Pichu,85,77,53,473,0 
+,HP,Atk,Def,,
+Cleffa#173 Cleffa,137,75,79,671,0 
+,HP,Atk,Def,,
+Igglybuff#174 Igglybuff,207,69,32,535,0 
+,HP,Atk,Def,,
+Togepi#175 Togepi,111,67,116,657,0 
+,HP,Atk,Def,,
+Togetic#176 Togetic,146,139,181,1708,0 
+,HP,Atk,Def,,
+Natu#177 Natu,120,134,89,1102,0 
+,HP,Atk,Def,,
+Xatu#178 Xatu,163,192,146,2188,1 
+,HP,Atk,Def,,
+Mareep#179 Mareep,146,114,79,991,0 
+,HP,Atk,Def,,
+Flaaffy#180 Flaaffy,172,145,109,1521,0 
+,HP,Atk,Def,,
+Ampharos#181 Ampharos,207,211,169,2852,2 
+,HP,Atk,Def,,
+Bellossom#182 Bellossom,181,169,186,2281,1 
+,HP,Atk,Def,,
+Marill#183 Marill,172,37,93,461,0 
+,HP,Atk,Def,,
+Azumarill#184 Azumarill,225,112,152,1588,2 
+,HP,Atk,Def,,
+Sudowoodo#185 Sudowoodo,172,167,176,2148,2 
+,HP,Atk,Def,,
+Politoed#186 Politoed,207,174,179,2449,2 
+,HP,Atk,Def,,
+Hoppip#187 Hoppip,111,67,94,600,0 
+,HP,Atk,Def,,
+Skiploom#188 Skiploom,146,91,120,976,0 
+,HP,Atk,Def,,
+Jumpluff#189 Jumpluff,181,118,183,1636,0 
+,HP,Atk,Def,,
+Aipom#190 Aipom,146,136,112,1348,0 
+,HP,Atk,Def,,
+Sunkern#191 Sunkern,102,55,55,395,0 
+,HP,Atk,Def,,
+Sunflora#192 Sunflora,181,185,135,2141,2 
+,HP,Atk,Def,,
+Yanma#193 Yanma,163,154,94,1470,0 
+,HP,Atk,Def,,
+Wooper#194 Wooper,146,75,66,641,0 
+,HP,Atk,Def,,
+Quagsire#195 Quagsire,216,152,143,1992,0 
+,HP,Atk,Def,,
+Espeon#196 Espeon,163,261,175,3170,4 
+,HP,Atk,Def,,
+Umbreon#197 Umbreon,216,126,240,2137,1 
+,HP,Atk,Def,,
+Murkrow#198 Murkrow,155,175,87,1562,0 
+,HP,Atk,Def,,
+Slowking#199 Slowking,216,177,180,2545,0 
+,HP,Atk,Def,,
+Misdreavus#200 Misdreavus,155,167,154,1926,0 
+,HP,Atk,Def,,
+Unown#201 Unown,134,136,91,1185,0 
+,HP,Atk,Def,,
+Wobbuffet#202 Wobbuffet,382,60,106,1026,0 
+,HP,Atk,Def,,
+Girafarig#203 Girafarig,172,182,133,2046,1 
+,HP,Atk,Def,,
+Pineco#204 Pineco,137,108,122,1108,0 
+,HP,Atk,Def,,
+Forretress#205 Forretress,181,161,205,2282,1 
+,HP,Atk,Def,,
+Dunsparce#206 Dunsparce,225,131,128,1689,0 
+,HP,Atk,Def,,
+Gligar#207 Gligar,163,143,184,1857,0 
+,HP,Atk,Def,,
+Steelix#208 Steelix,181,148,272,2414,0 
+,HP,Atk,Def,,
+Snubbull#209 Snubbull,155,137,85,1237,0 
+,HP,Atk,Def,,
+Granbull#210 Granbull,207,212,131,2552,2 
+,HP,Atk,Def,,
+Qwilfish#211 Qwilfish,163,184,138,2051,1 
+,HP,Atk,Def,,
+Scizor#212 Scizor,172,236,181,3001,3.5 
+,HP,Atk,Def,,
+Shuckle#213 Shuckle,85,17,396,405,0 
+,HP,Atk,Def,,
+Heracross#214 Heracross,190,234,179,3101,4 
+,HP,Atk,Def,,
+Sneasel#215 Sneasel,146,189,146,2051,1 
+,HP,Atk,Def,,
+Teddiursa#216 Teddiursa,155,142,93,1328,0 
+,HP,Atk,Def,,
+Ursaring#217 Ursaring,207,236,144,2945,3 
+,HP,Atk,Def,,
+Limagma#218 Slugma,120,118,71,895,0 
+,HP,Atk,Def,,
+Magcargo#219 Magcargo,137,139,191,1702,0 
+,HP,Atk,Def,,
+Swinub#220 Swinub,137,90,69,741,0 
+,HP,Atk,Def,,
+Piloswine#221 Piloswine,225,181,138,2345,3 
+,HP,Atk,Def,,
+Corsola#222 Corsola,146,118,156,1378,0 
+,HP,Atk,Def,,
+Remoraid#223 Remoraid,111,127,69,912,0 
+,HP,Atk,Def,,
+Octillery#224 Octillery,181,197,141,2315,1 
+,HP,Atk,Def,,
+Delibird#225 Delibird,128,128,90,1094,0 
+,HP,Atk,Def,,
+Mantine#226 Mantine,163,148,226,2108,1 
+,HP,Atk,Def,,
+Skarmory#227 Skarmory,163,148,226,2108,1 
+,HP,Atk,Def,,
+Houndour#228 Houndour,128,152,83,1234,0 
+,HP,Atk,Def,,
+Houndoom#229 Houndoom,181,224,144,2635,3.5 
+,HP,Atk,Def,,
+Kingdra#230 Kingdra,181,194,194,2641,2 
+,HP,Atk,Def,,
+Phanpy#231 Phanpy,207,107,98,1206,0 
+,HP,Atk,Def,,
+Donphan#232 Donphan,207,214,185,3013,2.5 
+,HP,Atk,Def,,
+Porygon2#233 Porygon2,198,198,180,2711,2 
+,HP,Atk,Def,,
+Stantler#234 Stantler,177,192,131,2164,1 
+,HP,Atk,Def,,
+Smeargle#235 Smeargle,146,40,83,431,0 
+,HP,Atk,Def,,
+Tyrogue#236 Tyrogue,111,64,64,492,0 
+,HP,Atk,Def,,
+Hitmontop#237 Hitmontop,137,173,207,2156,1 
+,HP,Atk,Def,,
+Smoochum#238 Smoochum,128,153,91,1291,0 
+,HP,Atk,Def,,
+Elekid#239 Elekid,128,135,101,1206,0 
+,HP,Atk,Def,,
+Magby#240 Magby,128,151,99,1323,0 
+,HP,Atk,Def,,
+Miltank#241 Miltank,216,157,193,2354,0 
+,HP,Atk,Def,,
+Blissey#242 Blissey,496,129,169,2757,0 
+,HP,Atk,Def,,
+Raikou#243 Raikou,207,241,195,3452,5 
+,HP,Atk,Def,,
+Entei#244 Entei,251,235,171,3473,4.5 
+,HP,Atk,Def,,
+Suicune#245 Suicune,225,180,235,2983,2 
+,HP,Atk,Def,,
+Larvitar#246 Larvitar,137,115,93,1040,0 
+,HP,Atk,Def,,
+Pupitar#247 Pupitar,172,155,133,1766,0 
+,HP,Atk,Def,,
+Tyranitar#248 Tyranitar,225,251,207,3834,5 
+,HP,Atk,Def,,
+Lugia#249 Lugia,235,193,310,3703,4 
+,HP,Atk,Def,,
+Ho-Oh#250 Ho-Oh,214,239,244,3863,3.5 
+,HP,Atk,Def,,
+Celebi#251 Celebi,225,210,210,3265,2 
+,HP,Atk,Def,,
+Treecko#252 Treecko,120,124,94,1053,0 
+,HP,Atk,Def,,
+Grovyle#253 Grovyle,137,172,120,1673,0 
+,HP,Atk,Def,,
+Sceptile#254 Sceptile,172,223,169,2757,3.5 
+,HP,Atk,Def,,
+Torchic#255 Torchic,128,130,87,1093,0 
+,HP,Atk,Def,,
+Combusken#256 Combusken,155,163,115,1652,0 
+,HP,Atk,Def,,
+Blaziken#257 Blaziken,190,240,141,2848,4 
+,HP,Atk,Def,,
+Mudkip#258 Mudkip,137,126,93,1128,0 
+,HP,Atk,Def,,
+Marshtomp#259 Marshtomp,172,156,133,1776,0 
+,HP,Atk,Def,,
+Swampert#260 Swampert,225,208,175,2974,3.5 
+,HP,Atk,Def,,
+Poochyena#261 Poochyena,111,96,61,678,0 
+,HP,Atk,Def,,
+Mightyena#262 Mightyena,172,171,132,1926,0 
+,HP,Atk,Def,,
+Zigzagoon#263 Zigzagoon,116,58,80,508,0 
+,HP,Atk,Def,,
+Linoone#264 Linoone,186,142,128,1662,0 
+,HP,Atk,Def,,
+Wurmple#265 Wurmple,128,75,59,578,0 
+,HP,Atk,Def,,
+Silcoon#266 Silcoon,137,60,77,553,0 
+,HP,Atk,Def,,
+Beautifly#267 Beautifly,155,189,98,1765,0 
+,HP,Atk,Def,,
+Cascoon#268 Cascoon,137,60,77,553,0 
+,HP,Atk,Def,,
+Dustox#269 Dustox,155,98,162,1224,0 
+,HP,Atk,Def,,
+????#270 Lotad,120,71,77,598,0 
+,HP,Atk,Def,,
+Lombre#271 Lombre,155,112,119,1197,0 
+,HP,Atk,Def,,
+Ludicolo#272 Ludicolo,190,173,176,2323,2 
+,HP,Atk,Def,,
+Seedot#273 Seedot,120,71,77,598,0 
+,HP,Atk,Def,,
+Nuzleaf#274 Nuzleaf,172,134,78,1227,0 
+,HP,Atk,Def,,
+Shiftry#275 Shiftry,207,200,121,2333,3 
+,HP,Atk,Def,,
+Taillow#276 Taillow,120,106,61,765,0 
+,HP,Atk,Def,,
+Swellow#277 Swellow,155,185,124,1920,1 
+,HP,Atk,Def,,
+Wingull#278 Wingull,120,106,61,765,0 
+,HP,Atk,Def,,
+Pelipper#279 Pelipper,155,175,174,2127,1 
+,HP,Atk,Def,,
+Ralts#280 Ralts,99,79,59,539,0 
+,HP,Atk,Def,,
+Kirlia#281 Kirlia,116,117,90,966,0 
+,HP,Atk,Def,,
+Gardevoir#282 Gardevoir,169,237,195,3093,4 
+,HP,Atk,Def,,
+Surskit#283 Surskit,120,93,87,791,0 
+,HP,Atk,Def,,
+Masquerain#284 Masquerain,172,192,150,2270,1 
+,HP,Atk,Def,,
+Shroomish#285 Shroomish,155,74,110,810,0 
+,HP,Atk,Def,,
+Breloom#286 Breloom,155,241,144,2628,3.5 
+,HP,Atk,Def,,
+Slakoth#287 Slakoth,155,104,92,1002,0 
+,HP,Atk,Def,,
+Vigoroth#288 Vigoroth,190,159,145,1968,0 
+,HP,Atk,Def,,
+Slaking#289 Slaking,284,290,166,4431,2.5 
+,HP,Atk,Def,,
+Nincada#290 Nincada,104,80,126,768,0 
+,HP,Atk,Def,,
+Ninjask#291 Ninjask,156,199,112,1969,0 
+,HP,Atk,Def,,
+Shedinja#292 Shedinja,1,153,73,393,0 
+,HP,Atk,Def,,
+Chuchmur#293 Whismur,162,92,42,671,0 
+,HP,Atk,Def,,
+Loudred#294 Loudred,197,134,81,1327,0 
+,HP,Atk,Def,,
+Exploud#295 Exploud,232,179,137,2347,1 
+,HP,Atk,Def,,
+Makuhita#296 Makuhita,176,99,54,817,0 
+,HP,Atk,Def,,
+Hariyama#297 Hariyama,302,209,114,2829,4.5 
+,HP,Atk,Def,,
+Azurill#298 Azurill,137,36,71,364,0 
+,HP,Atk,Def,,
+Nosepass#299 Nosepass,102,82,215,993,1 
+,HP,Atk,Def,,
+Skitty#300 Skitty,137,84,79,739,0 
+,HP,Atk,Def,,
+Delcatty#301 Delcatty,172,132,127,1496,0 
+,HP,Atk,Def,,
+Sableye#302 Sableye,137,141,136,1476,0 
+,HP,Atk,Def,,
+Mawile#303 Mawile,137,155,141,1634,1.5 
+,HP,Atk,Def,,
+Aron#304 Aron,137,121,141,1307,0 
+,HP,Atk,Def,,
+Lairon#305 Lairon,155,158,198,2056,0 
+,HP,Atk,Def,,
+Aggron#306 Aggron,172,198,257,3000,2.5 
+,HP,Atk,Def,,
+Meditite#307 Meditite,102,78,107,693,0 
+,HP,Atk,Def,,
+Medicham#308 Medicham,155,121,152,1431,1 
+,HP,Atk,Def,,
+Electrike#309 Electrike,120,123,78,965,0 
+,HP,Atk,Def,,
+Manectric#310 Manectric,172,215,127,2340,2 
+,HP,Atk,Def,,
+Plusle#311 Plusle,155,167,129,1778,1 
+,HP,Atk,Def,,
+????#312 Minun,155,147,150,1694,1 
+,HP,Atk,Def,,
+Volbeat#313 Volbeat,163,143,166,1771,0 
+,HP,Atk,Def,,
+Illumise#314 Illumise,163,143,166,1771,0 
+,HP,Atk,Def,,
+Roselia#315 Roselia,137,186,131,1870,1 
+,HP,Atk,Def,,
+Gulpin#316 Gulpin,172,80,99,866,0 
+,HP,Atk,Def,,
+Swalot#317 Swalot,225,140,159,1978,1 
+,HP,Atk,Def,,
+Carvanha#318 Carvanha,128,171,39,1020,0 
+,HP,Atk,Def,,
+Sharpedo#319 Sharpedo,172,243,83,2181,2.5 
+,HP,Atk,Def,,
+Wailmer#320 Wailmer,277,136,68,1468,0 
+,HP,Atk,Def,,
+Wailord#321 Wailord,347,175,87,2280,1.5 
+,HP,Atk,Def,,
+Numel#322 Numel,155,119,79,1057,0 
+,HP,Atk,Def,,
+Camerupt#323 Camerupt,172,194,136,2193,1 
+,HP,Atk,Def,,
+Torkoal#324 Torkoal,172,151,203,2093,1 
+,HP,Atk,Def,,
+Spoink#325 Spoink,155,125,122,1334,0 
+,HP,Atk,Def,,
+Grumpig#326 Grumpig,190,171,188,2369,2 
+,HP,Atk,Def,,
+Spinda#327 Spinda,155,116,116,1220,0 
+,HP,Atk,Def,,
+Trapinch#328 Trapinch,128,162,78,1274,0 
+,HP,Atk,Def,,
+Vibrava#329 Vibrava,137,134,99,1225,0 
+,HP,Atk,Def,,
+Flygon#330 Flygon,190,205,168,2661,2 
+,HP,Atk,Def,,
+Cacnea#331 Cacnea,137,156,74,1242,0 
+,HP,Atk,Def,,
+????#332 Cacturne,172,221,115,2298,2.5 
+,HP,Atk,Def,,
+Swablu#333 Swablu,128,76,132,824,0 
+,HP,Atk,Def,,
+Altaria#334 Altaria,181,141,201,2004,1 
+,HP,Atk,Def,,
+Zangoose#335 Zangoose,177,222,124,2418,1 
+,HP,Atk,Def,,
+Seviper#336 Seviper,177,196,118,2105,1 
+,HP,Atk,Def,,
+Lunatone#337 Lunatone,207,178,153,2327,2.5 
+,HP,Atk,Def,,
+Solrock#338 Solrock,207,178,153,2327,2.5 
+,HP,Atk,Def,,
+Barboach#339 Barboach,137,93,82,819,0 
+,HP,Atk,Def,,
+Whiscash#340 Whiscash,242,151,141,2075,1 
+,HP,Atk,Def,,
+Corphish#341 Corphish,125,141,99,1230,0 
+,HP,Atk,Def,,
+Crawdaunt#342 Crawdaunt,160,224,142,2474,2.5 
+,HP,Atk,Def,,
+Baltoy#343 Baltoy,120,77,124,787,0 
+,HP,Atk,Def,,
+Claydol#344 Claydol,155,140,229,1971,1 
+,HP,Atk,Def,,
+Lileep#345 Lileep,165,105,150,1291,0 
+,HP,Atk,Def,,
+Cradily#346 Cradily,200,152,194,2211,1 
+,HP,Atk,Def,,
+Anorith#347 Anorith,128,176,100,1529,0 
+,HP,Atk,Def,,
+Armaldo#348 Armaldo,181,222,174,2848,2 
+,HP,Atk,Def,,
+Feebas#349 Feebas,85,29,85,274,0 
+,HP,Atk,Def,,
+Milotic#350 Milotic,216,192,219,3005,3 
+,HP,Atk,Def,,
+Castform#351 Castform,172,139,139,1632,0 
+,HP,Atk,Def,,
+Kecleon#352 Kecleon,155,161,189,2047,0 
+,HP,Atk,Def,,
+Shuppet#353 Shuppet,127,138,65,1018,0 
+,HP,Atk,Def,,
+Banette#354 Banette,162,218,126,2298,3 
+,HP,Atk,Def,,
+Duskull#355 Duskull,85,70,162,706,0 
+,HP,Atk,Def,,
+Dusclops#356 Dusclops,120,124,234,1591,1 
+,HP,Atk,Def,,
+Tropius#357 Tropius,223,136,163,1941,1 
+,HP,Atk,Def,,
+Chimecho#358 Chimecho,181,175,170,2259,1 
+,HP,Atk,Def,,
+Absol#359 Absol,163,246,120,2526,3 
+,HP,Atk,Def,,
+Wynaut#360 Wynaut,216,41,86,534,0 
+,HP,Atk,Def,,
+Snorunt#361 Snorunt,137,95,95,888,0 
+,HP,Atk,Def,,
+Glalie#362 Glalie,190,162,162,2105,1 
+,HP,Atk,Def,,
+Spheal#363 Spheal,172,95,90,962,0 
+,HP,Atk,Def,,
+Sealeo#364 Sealeo,207,137,132,1714,0 
+,HP,Atk,Def,,
+Walrein#365 Walrein,242,182,176,2726,2.5 
+,HP,Atk,Def,,
+Clamperl#366 Clamperl,111,133,135,1270,0 
+,HP,Atk,Def,,
+Huntail#367 Huntail,146,197,179,2340,1 
+,HP,Atk,Def,,
+Gorebyss#368 Gorebyss,146,211,179,2494,1 
+,HP,Atk,Def,,
+Relicanth#369 Relicanth,225,162,203,2528,2 
+,HP,Atk,Def,,
+Luvdisc#370 Luvdisc,125,81,128,848,0 
+,HP,Atk,Def,,
+Bagon#371 Bagon,128,134,93,1156,0 
+,HP,Atk,Def,,
+Shelgon#372 Shelgon,163,172,155,2031,0 
+,HP,Atk,Def,,
+Salamence#373 Salamence,216,277,168,3749,4.5 
+,HP,Atk,Def,,
+Beldum#374 Beldum,120,96,132,976,0 
+,HP,Atk,Def,,
+Metang#375 Metang,155,138,176,1721,0 
+,HP,Atk,Def,,
+Metagross#376 Metagross,190,257,228,3791,5 
+,HP,Atk,Def,,
+Regirock#377 Regirock,190,179,309,3122,2 
+,HP,Atk,Def,,
+Regice#378 Regice,190,179,309,3122,2 
+,HP,Atk,Def,,
+Registeel#379 Registeel,190,143,285,2447,1 
+,HP,Atk,Def,,
+Latias#380 Latias,190,228,246,3510,3.5 
+,HP,Atk,Def,,
+Latios#381 Latios,190,268,212,3812,4.5 
+,HP,Atk,Def,,
+Kyogre#382 Kyogre,205,270,228,4115,5 
+,HP,Atk,Def,,
+Groudon#383 Groudon,205,270,228,4115,5 
+,HP,Atk,Def,,
+Rayquaza#384 Rayquaza,213,284,170,3835,5 
+,HP,Atk,Def,,
+Jirachi#385 Jirachi,225,210,210,3265,- 
+,HP,Atk,Def,,
+Deoxys#386 Deoxys (Normal Forme),137,345,115,3160,2.5 
+,HP,Atk,Def,,
+deoxysAttack#386 Deoxys (Attack Forme),137,414,46,2580,- 
+,HP,Atk,Def,,
+386defense#386 Deoxys (Defense Forme),137,144,330,2274,- 
+,HP,Atk,Def,,
+deoxysSpeed#386 Deoxys (Speed Forme),137,230,218,2879,- 
+,HP,Atk,Def,,
+Turtwig#387 Turtwig,146,119,110,1187,0 
+,HP,Atk,Def,,
+Grotle#388 Grotle,181,157,143,1890,0 
+,HP,Atk,Def,,
+Torterra#389 Torterra,216,202,188,2934,3 
+,HP,Atk,Def,,
+Chimchar#390 Chimchar,127,113,86,957,0 
+,HP,Atk,Def,,
+Monferno#391 Monferno,162,158,105,1574,0 
+,HP,Atk,Def,,
+Infernape#392 Infernape,183,222,151,2683,2.5 
+,HP,Atk,Def,,
+Piplup#393 Piplup,142,112,102,1075,0 
+,HP,Atk,Def,,
+Prinplup#394 Prinplup,162,150,139,1701,0 
+,HP,Atk,Def,,
+Empoleon#395 Empoleon,197,210,186,2900,2.5 
+,HP,Atk,Def,,
+Starly#396 Starly,120,101,58,719,0 
+,HP,Atk,Def,,
+Staravia#397 Staravia,146,142,94,1299,0 
+,HP,Atk,Def,,
+Staraptor#398 Staraptor,198,234,140,2825,3 
+,HP,Atk,Def,,
+Bidoof#399 Bidoof,153,80,73,721,0 
+,HP,Atk,Def,,
+Bibarel#400 Bibarel,188,162,119,1823,- 
+,HP,Atk,Def,,
+Kricketot#401 Kricketot,114,45,74,401,0 
+,HP,Atk,Def,,
+Kricketune#402 Kricketune,184,160,100,1653,0 
+,HP,Atk,Def,,
+Shinx#403 Shinx,128,117,64,876,0 
+,HP,Atk,Def,,
+Luxio#404 Luxio,155,159,95,1486,0 
+,HP,Atk,Def,,
+Luxray#405 Luxray,190,232,156,2888,4 
+,HP,Atk,Def,,
+Budew#406 Budew,120,91,109,856,- 
+,HP,Atk,Def,,
+Roserade#407 Roserade,155,243,185,2971,- 
+,HP,Atk,Def,,
+Cranidos#408 Cranidos,167,218,71,1820,- 
+,HP,Atk,Def,,
+Rampardos#409 Rampardos,219,295,109,3298,- 
+,HP,Atk,Def,,
+Shieldon#410 Shieldon,102,76,195,890,- 
+,HP,Atk,Def,,
+Bastiodon#411 Bastiodon,155,94,286,1539,- 
+,HP,Atk,Def,,
+Burmy#412 Burmy,120,53,83,488,- 
+,HP,Atk,Def,,
+wormadam#413 Wormadam,155,141,180,1773,- 
+,HP,Atk,Def,,
+Mothim#414 Mothim,172,185,98,1815,- 
+,HP,Atk,Def,,
+Combee#415 Combee,102,59,83,494,- 
+,HP,Atk,Def,,
+Vespiquen#416 Vespiquen,172,149,190,2005,- 
+,HP,Atk,Def,,
+Pachirisu#417 Pachirisu,155,94,172,1213,- 
+,HP,Atk,Def,,
+Buizel#418 Buizel,146,132,67,1054,- 
+,HP,Atk,Def,,
+Floatzel#419 Floatzel,198,221,114,2443,- 
+,HP,Atk,Def,,
+Cherubi#420 Cherubi,128,108,92,950,- 
+,HP,Atk,Def,,
+cherrim#421 Cherrim,172,170,153,2048,- 
+,HP,Atk,Def,,
+shellos#422 Shellos,183,103,105,1136,- 
+,HP,Atk,Def,,
+gastrodon#423 Gastrodon,244,169,143,2324,- 
+,HP,Atk,Def,,
+ambipom#424 Ambipom,181,205,143,2418,- 
+,HP,Atk,Def,,
+Drifloon#425 Drifloon,207,117,80,1197,0 
+,HP,Atk,Def,,
+Drifblim#426 Drifblim,312,180,102,2382,3 
+,HP,Atk,Def,,
+Buneary#427 Buneary,146,130,105,1258,0 
+,HP,Atk,Def,,
+Lopunny#428 Lopunny,163,156,194,2059,- 
+,HP,Atk,Def,,
+Mismagius#429 Mismagius,155,211,187,2615,- 
+,HP,Atk,Def,,
+Honchkrow#430 Honchkrow,225,243,103,2711,- 
+,HP,Atk,Def,,
+Glameow#431 Glameow,135,109,82,934,- 
+,HP,Atk,Def,,
+Purugly#432 Purugly,174,172,133,1953,- 
+,HP,Atk,Def,,
+Chingling#433 Chingling,128,114,94,1005,0 
+,HP,Atk,Def,,
+Stunky#434 Stunky,160,121,90,1151,0 
+,HP,Atk,Def,,
+Skuntank#435 Skuntank,230,184,132,2358,- 
+,HP,Atk,Def,,
+Bronzor#436 Bronzor,149,43,154,603,- 
+,HP,Atk,Def,,
+Bronzong#437 Bronzong,167,161,213,2239,- 
+,HP,Atk,Def,,
+Bonsly#438 Bonsly,137,124,133,1302,- 
+,HP,Atk,Def,,
+Mime Jr.#439 Mime Jr.,85,125,142,1095,- 
+,HP,Atk,Def,,
+Happiny#440 Happiny,225,25,77,371,- 
+,HP,Atk,Def,,
+Chatot#441 Chatot,183,183,91,1791,- 
+,HP,Atk,Def,,
+Spiritomb#442 Spiritomb,137,169,199,2072,1 
+,HP,Atk,Def,,
+Gible#443 Gible,151,124,84,1112,- 
+,HP,Atk,Def,,
+Gabite#444 Gabite,169,172,125,1874,- 
+,HP,Atk,Def,,
+Garchomp#445 Garchomp,239,261,193,3962,- 
+,HP,Atk,Def,,
+Munchlax#446 Munchlax,286,137,117,1892,- 
+,HP,Atk,Def,,
+Riolu#447 Riolu,120,127,78,993,0 
+,HP,Atk,Def,,
+Lucario#448 Lucario,172,236,144,2703,3 
+,HP,Atk,Def,,
+Hippopotas#449 Hippopotas,169,124,118,1358,- 
+,HP,Atk,Def,,
+Hippowdon#450 Hippowdon,239,201,191,3085,- 
+,HP,Atk,Def,,
+Skorupi#451 Skorupi,120,93,151,1009,- 
+,HP,Atk,Def,,
+Drapion#452 Drapion,172,180,202,2453,- 
+,HP,Atk,Def,,
+Croagunk#453 Croagunk,134,116,76,952,- 
+,HP,Atk,Def,,
+Toxicroak#454 Toxicroak,195,211,133,2488,- 
+,HP,Atk,Def,,
+Carnivine#455 Carnivine,179,187,136,2159,- 
+,HP,Atk,Def,,
+Finneon#456 Finneon,135,96,116,971,- 
+,HP,Atk,Def,,
+Lumineon#457 Lumineon,170,142,170,1814,- 
+,HP,Atk,Def,,
+Mantyke#458 Mantyke,128,105,179,1248,- 
+,HP,Atk,Def,,
+Snover#459 Snover,155,115,105,1159,- 
+,HP,Atk,Def,,
+Abomasnow#460 Abomasnow,207,178,158,2362,- 
+,HP,Atk,Def,,
+Weavile#461 Weavile,172,243,171,3005,- 
+,HP,Atk,Def,,
+Magnezone#462 Magnezone,172,238,205,3205,- 
+,HP,Atk,Def,,
+Lickilicky#463 Lickilicky,242,161,181,2467,- 
+,HP,Atk,Def,,
+Rhyperior#464 Rhyperior,251,241,190,3733,4.5 
+,HP,Atk,Def,,
+Tangrowth#465 Tangrowth,225,207,184,3030,- 
+,HP,Atk,Def,,
+Electivire#466 Electivire,181,249,163,3079,- 
+,HP,Atk,Def,,
+Magmortar#467 Magmortar,181,247,172,3132,- 
+,HP,Atk,Def,,
+Togekiss#468 Togekiss,198,225,217,3332,- 
+,HP,Atk,Def,,
+Yanmega#469 Yanmega,200,231,156,2946,- 
+,HP,Atk,Def,,
+Leafeon#470 Leafeon,163,216,219,2944,- 
+,HP,Atk,Def,,
+Glaceon#471 Glaceon,163,238,205,3126,- 
+,HP,Atk,Def,,
+Gliscor#472 Gliscor,181,185,222,2692,- 
+,HP,Atk,Def,,
+Mamoswine#473 Mamoswine,242,247,146,3328,- 
+,HP,Atk,Def,,
+Porygon-Z#474 Porygon-Z,198,264,150,3266,- 
+,HP,Atk,Def,,
+Gallade#475 Gallade,169,237,195,3093,- 
+,HP,Atk,Def,,
+Probopass#476 Probopass,155,135,275,2080,- 
+,HP,Atk,Def,,
+Dusknoir#477 Dusknoir,128,180,254,2388,- 
+,HP,Atk,Def,,
+Froslass#478 Froslass,172,171,150,2040,- 
+,HP,Atk,Def,,
+rotom#479 Rotom,137,185,159,2031,- 
+,HP,Atk,Def,,
+Uxie#480 Uxie,181,156,270,2524,- 
+,HP,Atk,Def,,
+Mesprit#481 Mesprit,190,212,212,3058,- 
+,HP,Atk,Def,,
+Azelf#482 Azelf,181,270,151,3210,- 
+,HP,Atk,Def,,
+Dialga#483 Dialga,204,275,211,4029,- 
+,HP,Atk,Def,,
+Palkia#484 Palkia,189,280,215,3991,- 
+,HP,Atk,Def,,
+Heatran#485 Heatran,209,251,213,3754,- 
+,HP,Atk,Def,,
+Regigigas#486 Regigigas,220,287,210,4337,- 
+,HP,Atk,Def,,
+Giratina#487 Giratina (Altered Forme),284,187,225,3379,2 
+,HP,Atk,Def,,
+Giratina Origin Forme Pokemon GO#487 Giratina (Origin Forme),284,225,187,3683,- 
+,HP,Atk,Def,,
+Cresselia#488 Cresselia,260,152,258,2857,2 
+,HP,Atk,Def,,
+Phione#489 Phione,190,162,162,2105,- 
+,HP,Atk,Def,,
+Manaphy#490 Manaphy,225,210,210,3265,- 
+,HP,Atk,Def,,
+Darkrai#491 Darkrai,172,285,198,3739,- 
+,HP,Atk,Def,,
+Shaymin#492 Shaymin (Land Forme),225,210,210,3265,- 
+,HP,Atk,Def,,
+Pokemon GO Shaymin Sky Forme#492 Shaymin (Sky Forme),225,261,166,3592,- 
+,HP,Atk,Def,,
+Arceus#493 Arceus,236,238,238,3982,- 
+,HP,Atk,Def,,
+meltanArt#808 Meltan,130,118,99,1068,0 
+,HP,Atk,Def,,
+melmetal#809 Melmetal,264,226,190,3599,0 
+,HP,Atk,Def,,

@@ -1,0 +1,145 @@
+Pokemon Name,Pokemon Number,Type 1,Type 2,ATK,DEF,STA
+Turtwig,387,Grass,,119,110,146
+Grotle,388,Grass,,157,143,181
+Torterra,389,Grass,Ground,202,188,216
+Chimchar,390,Fire,,113,86,127
+Monferno,391,Fire,Fighting,158,105,162
+Infernape,392,Fire,Fighting,222,151,183
+Piplup,393,Water,,112,102,142
+Prinplup,394,Water,,150,139,162
+Empoleon,395,Water,Steel,210,186,197
+Starly,396,Normal,Flying,101,58,120
+Staravia,397,Normal,Flying,142,94,146
+Staraptor,398,Normal,Flying,234,140,198
+Bidoof,399,Normal,,80,73,153
+Bibarel,400,Normal,Water,162,119,188
+Kricketot,401,Bug,,45,74,114
+Kricketune,402,Bug,,160,100,184
+Shinx,403,Electric,,117,64,128
+Luxio,404,Electric,,159,95,155
+Luxray,405,Electric,,232,156,190
+Budew,406,Grass,Poison,91,109,120
+Roserade,407,Grass,Poison,243,185,155
+Cranidos,408,Rock,Rock,218,71,167
+Rampardos,409,Rock,Rock,295,109,219
+Shieldon,410,Rock,Steel,76,195,102
+Bastiodon,411,Rock,Steel,94,286,155
+Burmy,412,Bug,,53,83,120
+Wormadam,413,Bug,Grass,141,180,155
+Wormadam Plant,413,Bug,Grass,141,180,155
+Wormadam Sandy,413,Bug,Ground,127,175,155
+Wormadam Trash,413,Bug,Steel,141,180,155
+Mothim,414,Bug,Flying,185,98,172
+Combee,415,Bug,Flying,59,83,102
+Vespiquen,416,Bug,Flying,149,190,172
+Pachirisu,417,Electric,,94,172,155
+Buizel,418,Water,,132,67,146
+Floatzel,419,Water,,221,114,198
+Cherubi,420,Grass,,108,92,128
+Cherrim,421,Grass,,170,153,172
+Cherrim Overcast,421,Grass,,170,153,172
+Cherrim Sunny,421,Grass,,170,153,172
+Shellos,422,Water,,103,105,183
+Shellos East_sea,422,Water,,103,105,183
+Shellos West_sea,422,Water,,103,105,183
+Gastrodon,423,Water,Ground,169,143,244
+Gastrodon East_sea,423,Water,Ground,169,143,244
+Gastrodon West_sea,423,Water,Ground,169,143,244
+Ambipom,424,Normal,,205,143,181
+Drifloon,425,Ghost,Flying,117,80,207
+Drifblim,426,Ghost,Flying,180,102,312
+Buneary,427,Normal,,130,105,146
+Lopunny,428,Normal,,156,194,163
+Mismagius,429,Ghost,,211,187,155
+Honchkrow,430,Dark,Flying,243,103,225
+Glameow,431,Normal,,109,82,135
+Purugly,432,Normal,,172,133,174
+Chingling,433,Psychic,,114,94,128
+Stunky,434,Poison,Dark,121,90,160
+Skuntank,435,Poison,Dark,184,132,230
+Bronzor,436,Steel,Psychic,43,154,149
+Bronzong,437,Steel,Psychic,161,213,167
+Bonsly,438,Rock,,124,133,137
+Mime Jr,439,Psychic,Fairy,125,142,85
+Happiny,440,Normal,,25,77,225
+Chatot,441,Normal,Flying,183,91,183
+Spiritomb,442,Ghost,Dark,169,199,137
+Gible,443,Dragon,Ground,124,84,151
+Gabite,444,Dragon,Ground,172,125,169
+Garchomp,445,Dragon,Ground,261,193,239
+Munchlax,446,Normal,,137,117,286
+Riolu,447,Fighting,,127,78,120
+Lucario,448,Fighting,Steel,236,144,172
+Hippopotas,449,Ground,,124,118,169
+Hippowdon,450,Ground,,201,191,239
+Skorupi,451,Poison,Bug,93,151,120
+Drapion,452,Poison,Dark,180,202,172
+Croagunk,453,Poison,Fighting,116,76,134
+Toxicroak,454,Poison,Fighting,211,133,195
+Carnivine,455,Grass,,187,136,179
+Finneon,456,Water,,96,116,135
+Lumineon,457,Water,,142,170,170
+Mantyke,458,Water,Flying,105,179,128
+Snover,459,Ice,Grass,115,105,155
+Abomasnow,460,Ice,Grass,178,158,207
+Weavile,461,Dark,Ice,243,171,172
+Magnezone,462,Electric,Steel,238,205,172
+Lickilicky,463,Normal,,161,181,242
+Rhyperior,464,Ground,Rock,241,190,251
+Tangrowth,465,Grass,,207,184,225
+Electivire,466,Electric,,249,163,181
+Magmortar,467,Fire,,247,172,181
+Togekiss,468,Fairy,Flying,225,217,198
+Yanmega,469,Bug,Flying,231,156,200
+Leafeon,470,Grass,,216,219,163
+Glaceon,471,Ice,,238,205,163
+Gliscor,472,Ground,Flying,185,222,181
+Mamoswine,473,Ice,Ground,247,146,242
+Porygon Z,474,Normal,,264,150,198
+Gallade,475,Psychic,Fighting,237,195,169
+Probopass,476,Rock,Steel,135,275,155
+Dusknoir,477,Ghost,,180,254,128
+Froslass,478,Ice,Ghost,171,150,172
+Rotom,479,Electric,Ghost,204,219,137
+Rotom Fan,479,Electric,Flying,204,219,137
+Rotom Frost,479,Electric,Ice,204,219,137
+Rotom Heat,479,Electric,Fire,204,219,137
+Rotom Mow,479,Electric,Grass,204,219,137
+Rotom Normal,479,Electric,Ghost,204,219,137
+Rotom Wash,479,Electric,Water,185,159,137
+Uxie,480,Psychic,,156,270,181
+Mesprit,481,Psychic,,212,212,190
+Azelf,482,Psychic,,270,151,181
+Dialga,483,Steel,Dragon,275,211,205
+Palkia,484,Water,Dragon,280,215,189
+Heatran,485,Fire,Steel,251,213,209
+Regigigas,486,Normal,,287,210,221
+Giratina,487,Ghost,Dragon,187,225,284
+Giratina Altered,487,Ghost,Dragon,187,225,284
+Giratina Origin,487,Ghost,Dragon,225,187,284
+Cresselia,488,Psychic,,152,258,260
+Phione,489,Water,,162,162,190
+Manaphy,490,Water,,210,210,225
+Darkrai,491,Dark,,285,198,172
+Shaymin,492,Grass,,261,166,225
+Shaymin Land,492,Grass,,261,166,225
+Shaymin Sky,492,Grass,Flying,210,210,225
+Arceus,493,Normal,,238,238,237
+Arceus Bug,493,Bug,,238,238,237
+Arceus Dark,493,Dark,,238,238,237
+Arceus Dragon,493,Dragon,,238,238,237
+Arceus Electric,493,Electric,,238,238,237
+Arceus Fairy,493,Fairy,,238,238,237
+Arceus Fighting,493,Fighting,,238,238,237
+Arceus Fire,493,Fire,,238,238,237
+Arceus Flying,493,Flying,,238,238,237
+Arceus Ghost,493,Ghost,,238,238,237
+Arceus Grass,493,Grass,,238,238,237
+Arceus Ground,493,Ground,,238,238,237
+Arceus Ice,493,Ice,,238,238,237
+Arceus Normal,493,Normal,,238,238,237
+Arceus Poison,493,Poison,,238,238,237
+Arceus Psychic,493,Psychic,,238,238,237
+Arceus Rock,493,Rock,,238,238,237
+Arceus Steel,493,Steel,,238,238,237
+Arceus Water,493,Water,,238,238,237

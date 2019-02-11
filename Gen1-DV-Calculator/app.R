@@ -17,7 +17,7 @@ gen1stats <- read_csv("../Gen1Stats.csv", col_names = T)
 ui <- fluidPage(
    
    # Application title
-   titlePanel("Pokemon DV calculator Generation 1"),
+   titlePanel("Pokemon DV/IV calculator Generation 1"),
    
    # Sidebar with a slider input for number of bins 
    sidebarLayout(
