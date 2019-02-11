@@ -14,7 +14,7 @@ library(tidyverse)
 library(ggplot2)
 
 base_stats <- read_csv("../pogo_base_stats.csv", col_names = T)
-cpmtable <- read_csv("./CPM.csv")
+cpmtable <- read_csv("../CPM.csv")
 overall <- tibble(
 Appraisal = c("Overall, your pokemon is a wonder! What a breathtaking Pokemon!",
               "Overall, your pokemon has certainly caught my attention.",
@@ -44,10 +44,11 @@ individual <- tibble(
                 "I’m blown away by its stats. WOW!",
                 "It’s got excellent stats! How exciting!",
                 "Its stats indicate that in battle, it’ll get the job done.",
-                "Its stats don’t point to greatness in battle."),
+                "Its stats don’t point to greatness in battle.",
+                "Unknown"),
   IV = c(list(15), list(13:14), list(8:12), list(0:7),
          list(15), list(13:14), list(8:12), list(0:7),
-         list(15), list(13:14), list(8:12), list(0:7))
+         list(15), list(13:14), list(8:12), list(0:7), list(0:15))
 )
 
 # Define UI for application that draws a histogram
@@ -61,7 +62,7 @@ ui <- fluidPage(
     sidebarPanel(
       selectInput(inputId = "pkmn",
                   label = "Pokemon: ",
-                  choices = base_stats$Name
+                  choices = base_stats$Pokemon
       ),
       
       sliderInput("level",
@@ -69,9 +70,13 @@ ui <- fluidPage(
                   min = 1,
                   max = 40,
                   value = 25),
-      uiOutput("stamina"),
+      uiOutput("hp"),
+      uiOutput("cp"),
+      uiOutput("overall"),
       uiOutput("attack"),
-      uiOutput("defense")
+      uiOutput("defense"),
+      uiOutput("stamina")
+      
       
       
       
@@ -102,56 +107,78 @@ server <- function(input, output){
   
   output$attack <- renderUI({
     poke <- base_stats %>% filter(Pokemon == input$pkmn)
-    sliderInput("att",
+    selectInput("att",
                 "Attack:",
-                step = 1,
-                min = as.integer(poke$ATT * input$level / 50 + 5 + 0 * input$level / 50),
-                max = as.integer(poke$ATT * input$level / 50 + 5 + 15 * input$level / 50),
-                value = as.integer(poke$ATT * input$level / 50 + 5 + 0 * input$level / 50))
+                choices = individual$Appraisal)
     
   })
   output$defense <- renderUI({
-    poke <- gen1stats %>% filter(Name == input$pkmn)
-    sliderInput("def",
+    poke <- base_stats %>% filter(Pokemon == input$pkmn)
+    selectInput("def",
                 "Defense:",
+                choices = individual$Appraisal)
+    
+  })
+  
+  output$hp <- renderUI({
+    poke <- base_stats %>% filter(Pokemon == input$pkmn)
+    sliderInput("hp",
+                "HP:",
                 step = 1,
-                min = as.integer(poke$DEF * input$level / 50 + 5 + 0 * input$level / 50),
-                max = as.integer(poke$DEF * input$level / 50 + 5 + 15 * input$level / 50),
-                value = as.integer(poke$DEF * input$level / 50 + 5 + 0 * input$level / 50))
+                min = as.integer((poke$HP + 0) * cpmtable[input$level,2]),
+                max = as.integer((poke$HP + 15) * cpmtable[input$level,2]),
+                value = as.integer((poke$HP + 0) * cpmtable[input$level,2]))
     
   })
   
   output$stamina <- renderUI({
-    poke <- gen1stats %>% filter(Name == input$pkmn)
-    sliderInput("hp",
-                "HP:",
+    poke <- base_stats %>% filter(Pokemon == input$pkmn)
+    selectInput("sta",
+                "Stamina:",
+                choices = individual$Appraisal)
+    
+  })
+  
+  output$overall <- renderUI({
+    poke <- base_stats %>% filter(Pokemon == input$pkmn)
+    selectInput("overall",
+                "Overall Appraisal:",
+                choices = overall$Appraisal)
+    
+  })
+  
+  output$cp <- renderUI({
+    poke <- base_stats %>% filter(Pokemon == input$pkmn)
+    sliderInput("cp",
+                "CP:",
                 step = 1,
-                min = as.integer(poke$HP * input$level / 50 + (input$level+10) + 0 * input$level / 50),
-                max = as.integer(poke$HP * input$level / 50 + (input$level+10) + 15 * input$level / 50),
-                value = as.integer(poke$HP * input$level / 50 + (input$level+10) + 0 * input$level / 50))
+                min = 10,
+                max = poke$MAX_CP,
+                value = as.integer(10))
     
   })
   
   output$BASEstats <- renderTable({
-    poke <- gen1stats %>% filter(Name == input$pkmn)
-    poke
+    poke <- base_stats %>% filter(Pokemon == input$pkmn)
+    poke[,1:6]
     
     
   })
+  # perform alignment. might redo whole section.
   output$IVstats <- renderTable({
-    poke <- gen1stats %>% filter(Name == input$pkmn)
-    a <- c("HP", "ATT", "DEF", "SPD", "SPC")
+    poke <- base_stats %>% filter(Pokemon == input$pkmn)
+    a <- c("ATT", "DEF", "STA")
     min.max <- data.frame(row.names = c("MIN", "MAX"))
-    inputs <- data.frame(pkmn = input$pkmn, 
+    inputs <- tibble(pkmn = input$pkmn, 
                          hp = input$hp,
                          att = input$att,
                          def = input$def,
-                         spd = input$spd,
-                         spc = input$spc,
+                         cp = input$cp,
+                         overall = input$overall,
                          level = input$level)
     inputs$pkmn <- as.character(inputs$pkmn)
-    poke$Name <- as.character(poke$Name)
-    stats <- full_join(x = inputs, y = poke, by = c("pkmn" = "Name"))
+    poke$Pokemon <- as.character(poke$Pokemon)
+    stats <- full_join(x = inputs, y = poke, by = c("pkmn" = "Pokemon"))
     for(j in 1:length(a)){
       if (a[j] == "HP") {
         #hp calculation

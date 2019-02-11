@@ -40,6 +40,10 @@ for (i in 1:nrow(stats)){
 
 stats[,1] <- newnames
 head(stats)
+stats[,2] <- as.integer(stats[,2])
+stats[,3] <- as.integer(stats[,3])
+stats[,4] <- as.integer(stats[,4])
+write.csv(stats, file = "pogo_base_stats.csv")
 
 CP = ((Base_Attack + Individual_Attack) * 
        ((Base_Defense + Individual_Defense)^0.5 * 
@@ -48,7 +52,14 @@ CP = ((Base_Attack + Individual_Attack) *
 CPMtable <- read.csv("CPM.csv")
 head(CPMtable)      
 
+Individual_Attack = (CP / ((Base_Defense + Individual_Defense)^0.5 * 
+                             (Base_Stamina + Individual_Stamina)^(0.5) * 
+                             CPM^2 / 10)) - Base_Attack
+Individual_Defense = (CP / ((Base_Attack + Individual_Attack) * 
+                              (Base_Stamina + Individual_Stamina)^(0.5) *
+                              CPM^2 / 10))^2 - Base_Defense
 
+# inputs: cp, hp, rough level, 1-3 iv ranges
 
 
 
