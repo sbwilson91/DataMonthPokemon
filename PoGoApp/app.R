@@ -58,7 +58,7 @@ ui <- fluidPage(
   # Application title
   titlePanel("Pokemon IV calculator PokemonGo"),
   
-  # Sidebar with a slider input for number of bins 
+  # Sidebar  
   sidebarLayout(
     sidebarPanel(
       radioButtons("team",
@@ -83,30 +83,24 @@ ui <- fluidPage(
                          "Stats appraised:",
                          choices = c("Attack", "Defense", "HP")),
       uiOutput("ivapp")
-
-     
-      
-      
-      
-      
     ),
-    mainPanel(
-      tabsetPanel(type = "pills",
-                  tabPanel("Gen 1",
-                           fluidRow(
-                             tableOutput("BASEstats"),
-                             tableOutput("IVstats"),
-                             plotOutput("bar"))),
-                  tabPanel("Gen 2")
-                  
-      ))
+    #mainPanel(
+    #  tabsetPanel(type = "pills",
+    #              tabPanel("Gen 1",
+    #                       fluidRow(
+    #                         tableOutput("BASEstats"),
+    #                         tableOutput("IVstats"),
+    #                         plotOutput("bar"))),
+    #              tabPanel("Gen 2")
+    #              
+    #  ))
     
     # Show a plot of the generated distribution
-    #mainPanel(
-    #   tableOutput("BASEstats"),
-    #   tableOutput("DVstats"),
-    #   plotOutput("bar")
-    #)
+    mainPanel(
+       tableOutput("BASEstats"),
+       tableOutput("IVstats"),
+       plotOutput("bar")
+    )
   )
 )
 
@@ -122,7 +116,6 @@ server <- function(input, output){
     
   })
  
-  
   output$hp <- renderUI({
     poke <- base_stats %>% filter(Pokemon == input$pkmn)
     sliderInput("hp",
@@ -133,10 +126,6 @@ server <- function(input, output){
                 value = as.integer((poke$HP + 0) * cpmtable[input$level,2]))
     
   })
-  
-  
-    
-  
   
   output$overall <- renderUI({
     selectInput("overall",
@@ -213,7 +202,7 @@ server <- function(input, output){
   })
   output$bar <- renderPlot({
     poke <- base_stats %>% filter(Name == input$pkmn)
-    a <- c("HP", "ATT", "DEF", "SPD", "SPC")
+    a <- c("HP", "ATT", "DEF")
     min.max <- data.frame(row.names = c("MIN", "MAX"))
     inputs <- data.frame(pkmn = input$pkmn, 
                          hp = input$hp,
