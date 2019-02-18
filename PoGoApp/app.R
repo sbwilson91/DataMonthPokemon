@@ -79,9 +79,12 @@ ui <- fluidPage(
       uiOutput("hp"),
       uiOutput("cp"),
       uiOutput("overall"),
-      uiOutput("attack"),
-      uiOutput("defense"),
-      uiOutput("stamina")
+      checkboxGroupInput("ivstat",inline = T,
+                         "Stats appraised:",
+                         choices = c("Attack", "Defense", "HP")),
+      uiOutput("ivapp")
+
+     
       
       
       
@@ -111,21 +114,14 @@ ui <- fluidPage(
 server <- function(input, output){
   
   
-  output$attack <- renderUI({
-    poke <- base_stats %>% filter(Pokemon == input$pkmn)
-    
-    selectInput("att",
-                "Attack:",
-                choices = individual$Appraisal)
-    
-  })
-  output$defense <- renderUI({
-    poke <- base_stats %>% filter(Pokemon == input$pkmn)
-    selectInput("def",
-                "Defense:",
-                choices = individual$Appraisal)
+  output$ivapp <- renderUI({
+
+    selectInput("ivapp",
+                "Stat appraisal:",
+                choices = individual[,input$team])
     
   })
+ 
   
   output$hp <- renderUI({
     poke <- base_stats %>% filter(Pokemon == input$pkmn)
@@ -138,19 +134,14 @@ server <- function(input, output){
     
   })
   
-  output$stamina <- renderUI({
-    poke <- base_stats %>% filter(Pokemon == input$pkmn)
-    selectInput("sta",
-                "Stamina:",
-                choices = individual$Appraisal)
+  
     
-  })
+  
   
   output$overall <- renderUI({
-    poke <- base_stats %>% filter(Pokemon == input$pkmn)
     selectInput("overall",
                 "Overall Appraisal:",
-                choices = overall$Appraisal)
+                choices = as.vector(overall[,input$team]))
     
   })
   
