@@ -16,39 +16,40 @@ library(ggplot2)
 base_stats <- read_csv("../pogo_base_stats.csv", col_names = T)
 cpmtable <- read_csv("../CPM.csv")
 overall <- tibble(
-Appraisal = c("Overall, your pokemon is a wonder! What a breathtaking Pokemon!",
+  Mystic = c("Overall, your pokemon is a wonder! What a breathtaking Pokemon!",
               "Overall, your pokemon has certainly caught my attention.",
               "Overall, your pokemon is above average.",
-              "Overall, your pokemon is not likely to make much headway in battle.",
-              "Overall, your pokemon looks like it can really battle with the best of them!",
+              "Overall, your pokemon is not likely to make much headway in battle."),
+  Instinct = c("Overall, your pokemon looks like it can really battle with the best of them!",
               "Overall, your pokemon is really strong!",
               "Overall, your pokemon is pretty decent!",
-              "Overall, your pokemon has room for improvement as far as battling goes.",
+              "Overall, your pokemon has room for improvement as far as battling goes."),
+  Valor = c(
               "Overall, your pokemon simply amazes me. It can accomplish anything!",
               "Overall, your pokemon is a strong Pokemon. You should be proud!",
               "Overall, your pokemon is a decent Pokemon",
               "Overall, your pokemon may not be great in battle, but I still like it!"),
-TotalIV = c(list(39:48), list(32:38), list(25:31), list(0:24),
-            list(39:48), list(32:38), list(25:31), list(0:24),
-            list(39:48), list(32:38), list(25:31), list(0:24)))
+  TotalIV = c(list(39:48), list(32:38), list(25:31), list(0:24)
+            ))
 
 individual <- tibble(
-  Appraisal = c("Its stats exceed my calculations. It’s incredible!",
+  Mystic = c("Its stats exceed my calculations. It’s incredible!",
                 "I am certainly impressed by its stats, I must say.",
                 "Its stats are noticeably trending to the positive.",
-                "Its stats are not out of the norm, in my opinion.",
+                "Its stats are not out of the norm, in my opinion."),
+  Instinct = c(
                 "Its stats are the best I’ve ever seen! No doubt about it!",
                 "Its stats are really strong! Impressive.",
                 "It’s definitely got some good stats. Definitely!",
-                "Its stats are all right, but kinda basic, as far as I can see.",
+                "Its stats are all right, but kinda basic, as far as I can see."),
+  Valor = c(
                 "I’m blown away by its stats. WOW!",
                 "It’s got excellent stats! How exciting!",
                 "Its stats indicate that in battle, it’ll get the job done.",
-                "Its stats don’t point to greatness in battle.",
-                "Unknown"),
-  IV = c(list(15), list(13:14), list(8:12), list(0:7),
-         list(15), list(13:14), list(8:12), list(0:7),
-         list(15), list(13:14), list(8:12), list(0:7), list(0:15))
+                "Its stats don’t point to greatness in battle."),
+                
+  IV = c(list(15), list(13:14), list(8:12), list(0:7))
+         
 )
 
 # Define UI for application that draws a histogram
@@ -60,6 +61,10 @@ ui <- fluidPage(
   # Sidebar with a slider input for number of bins 
   sidebarLayout(
     sidebarPanel(
+      radioButtons("team",
+                   label = "What team are you in? ",
+                   choices = c("Mystic", "Instinct", "Valor"),
+                   selected = "Instinct", inline = T),
       selectInput(inputId = "pkmn",
                   label = "Pokemon: ",
                   choices = base_stats$Pokemon
@@ -70,6 +75,7 @@ ui <- fluidPage(
                   min = 1,
                   max = 40,
                   value = 25),
+      
       uiOutput("hp"),
       uiOutput("cp"),
       uiOutput("overall"),
@@ -107,6 +113,7 @@ server <- function(input, output){
   
   output$attack <- renderUI({
     poke <- base_stats %>% filter(Pokemon == input$pkmn)
+    
     selectInput("att",
                 "Attack:",
                 choices = individual$Appraisal)
@@ -214,7 +221,7 @@ server <- function(input, output){
     
   })
   output$bar <- renderPlot({
-    poke <- gen1stats %>% filter(Name == input$pkmn)
+    poke <- base_stats %>% filter(Name == input$pkmn)
     a <- c("HP", "ATT", "DEF", "SPD", "SPC")
     min.max <- data.frame(row.names = c("MIN", "MAX"))
     inputs <- data.frame(pkmn = input$pkmn, 
