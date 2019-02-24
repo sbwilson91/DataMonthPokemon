@@ -153,103 +153,58 @@ server <- function(input, output){
   })
   # perform alignment. might redo whole section.
   output$IVstats <- renderTable({
-    poke <- base_stats %>% filter(Pokemon == input$pkmn)
-    a <- c("ATT", "DEF", "STA")
-    min.max <- data.frame(row.names = c("MIN", "MAX"))
-    inputs <- tibble(pkmn = input$pkmn, 
-                         hp = input$hp,
-                         att = input$att,
-                         def = input$def,
-                         cp = input$cp,
-                         overall = input$overall,
-                         level = input$level)
-    inputs$pkmn <- as.character(inputs$pkmn)
-    poke$Pokemon <- as.character(poke$Pokemon)
-    stats <- full_join(x = inputs, y = poke, by = c("pkmn" = "Pokemon"))
-    for(j in 1:length(a)){
-      if (a[j] == "HP") {
-        #hp calculation
-        stat.range <- c()
-        fla <- function(stats, i = i) {
-          as.integer(stats$HP * stats$level / 50 + (stats$level+10) + i * stats$level / 50)
-          
-        }
-        
-      } else {
-        stat.range <- c()
-        fla <- function(stats, i = i) {
-          as.integer(stats[,(7+j)] * stats$level / 50 + 5 + i * stats$level / 50)
-          
-        }
-        #other stat calculation
-      }
+    # generate table of possible IVs from input values
+    iv.app <- individual %>% transmute(Mystic, IV) %>% column_to_rownames(var = "Mystic")
+   
+    ivs <- data.frame(Stat = c("ATT", "DEF", "STA"),
+            Min = c(0,0,0),
+            Max = c(15,15,15))
+    ivstat <- c("Attack", "Defense", "HP")
+    if (grep("Attack", ivstat) > 0) {
+      ivs[1,2] <- min(iv.app[["I am certainly impressed by its stats, I must say.",1]])
+      ivs[1,3] <- max(iv.app[["I am certainly impressed by its stats, I must say.",1]])
+    } 
+    if (grep("Defense", ivstat) > 0) {
+      ivs[2,2] <- min(iv.app[["I am certainly impressed by its stats, I must say.",1]])
+      ivs[2,3] <- max(iv.app[["I am certainly impressed by its stats, I must say.",1]])
+    } 
+    if (grep("HP", ivstat) > 0) {
+      ivs[3,2] <- min(iv.app[["I am certainly impressed by its stats, I must say.",1]])
+      ivs[3,3] <- max(iv.app[["I am certainly impressed by its stats, I must say.",1]])
+    } 
+    
+    ivs
       
-      for(i in 0:15){
-        temp <- fla(stats, i)
-        if (temp == inputs[j+1]){
-          stat.range <- c(stat.range, i)
-        }
-        
-      }
-      min.max <- cbind(min.max, c(min(stat.range), max(stat.range)))
       
-    }
-    colnames(min.max) <- a
-    min.max %>% mutate(PCT = (min.max$ATT+min.max$DEF+min.max$SPD+min.max$SPC+min.max$HP)/75*100)
-    #min.max %>% mutate(PCT = sum(min.max[,1:5])/75*100)
     
     
   })
   output$bar <- renderPlot({
-    poke <- base_stats %>% filter(Name == input$pkmn)
-    a <- c("HP", "ATT", "DEF")
-    min.max <- data.frame(row.names = c("MIN", "MAX"))
-    inputs <- data.frame(pkmn = input$pkmn, 
-                         hp = input$hp,
-                         att = input$att,
-                         def = input$def,
-                         spd = input$spd,
-                         spc = input$spc,
-                         level = input$level)
-    stats <- full_join(x = inputs, y = poke, by = c("pkmn" = "Name"))
-    for(j in 1:length(a)){
-      if (a[j] == "HP") {
-        #hp calculation
-        stat.range <- c()
-        fla <- function(stats, i = i) {
-          as.integer(stats$HP * stats$level / 50 + (stats$level+10) + i * stats$level / 50)
-          
-        }
-        
-      } else {
-        stat.range <- c()
-        fla <- function(stats, i = i) {
-          as.integer(stats[,(7+j)] * stats$level / 50 + 5 + i * stats$level / 50)
-          
-        }
-        #other stat calculation
-      }
-      
-      for(i in 0:15){
-        temp <- fla(stats, i)
-        if (temp == inputs[j+1]){
-          stat.range <- c(stat.range, i)
-        }
-        
-      }
-      min.max <- cbind(min.max, c(min(stat.range), max(stat.range)))
-      
-    }
-    colnames(min.max) <- a
+    iv.app <- individual %>% transmute(Mystic, IV) %>% column_to_rownames(var = "Mystic")
     
-    c <- t(min.max)
-    c <- data.frame(STAT = c(a,a), VALUE = c(c[,1], c[,2]))
+    ivs <- data.frame(Stat = c("ATT", "DEF", "STA"),
+                      Min = c(0,0,0),
+                      Max = c(15,15,15))
+    ivstat <- c("Attack", "Defense", "HP")
+    if (grep("Attack", ivstat) > 0) {
+      ivs[1,2] <- min(iv.app[["I am certainly impressed by its stats, I must say.",1]])
+      ivs[1,3] <- max(iv.app[["I am certainly impressed by its stats, I must say.",1]])
+    } 
+    if (grep("Defense", ivstat) > 0) {
+      ivs[2,2] <- min(iv.app[["I am certainly impressed by its stats, I must say.",1]])
+      ivs[2,3] <- max(iv.app[["I am certainly impressed by its stats, I must say.",1]])
+    } 
+    if (grep("HP", ivstat) > 0) {
+      ivs[3,2] <- min(iv.app[["I am certainly impressed by its stats, I must say.",1]])
+      ivs[3,3] <- max(iv.app[["I am certainly impressed by its stats, I must say.",1]])
+    } 
     
-    ggplot(c, aes(x = STAT, y = VALUE)) + 
-      geom_line(size = 2) +
-      geom_point(size = 5)+
-      coord_cartesian(ylim = c(0,15)) +
-      labs(title = paste0("Percentage is "))
+    ggplot(ivs, aes(x = Stat)) + 
+      geom_boxplot(aes(ymin = Min, middle = Min, lower = Min, upper = Max, ymax = Max), stat = "identity") +
+      #geom_line(size = 2) +
+      #geom_point(size = 5)+
+      coord_cartesian(ylim = c(0,15)) 
+      #labs(title = paste0("Percentage is "))
     
     
     #data.frame(Type = c("HP", "ATT", "DEF", "SPD", "SPC", "PCT"),
